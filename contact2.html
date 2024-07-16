@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contactos</title>
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+</head>
+
+<body>
+    <form method="POST" action="./send-email.php" enctype="text/plain">
+        <div class="shade">
+            <div class="blackboard">
+                <div class="form">
+                    <p>
+                        <label for="name">Nome: </label>
+                        <input type="text" id="name" name="name" required />
+                    </p>
+                    <p>
+                        <label for="email">Email: </label>
+                        <input type="text" id="email" name="email" required />
+                    </p>
+                    <p>
+                        <label for="phone">Telemóvel: </label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </p>
+                    <p>
+                        <label for="subject">Assunto: </label>
+                        <input type="text" id="subject" name="subject" required />
+                    </p>
+                    <p>
+                        <label for="message">Mensagem: </label>
+                        <textarea id="message" name="message" required></textarea>
+                    </p>
+                    <p class="wipeout">
+                        <input type="submit" value="Send" />
+                        <!--button>Send</button-->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
