@@ -10,8 +10,15 @@
     width: auto;
 }
 
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
 .nav-link {
     font-size: 20px;
+    margin: 20px;
 }
 
 .custom-jumbotron {
@@ -24,9 +31,10 @@
     align-items: center; /* This centers the content vertically */
 }
 
-#jumbrotron-bar {
+#jumbotron-bar {
     opacity: 65%;
     width: 100%;
+    line-height: 1px;
 }
 
 .jumbotron-title {
@@ -41,11 +49,13 @@
     padding: 30px;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 500px; /* Set your desired height */
-    object-fit: cover;
-  }
+.experience-card {
+    padding: 60px;
+}
+
+.experience {
+    cursor: pointer;
+}
 
 .card-img-top {
     height: 350px;
@@ -58,12 +68,6 @@
     top: 10px;
 }
 
-.carousel-caption h5, p {
-    color: black;
-    position: relative;
-    top: 50px;
-}
-
 #contact-button:hover {
     background-color: white;
     color: #6C757D;
@@ -71,10 +75,23 @@
 }
 
 .media-image {
-    width: 200px; /* Set your desired width */
-    height: 200px; /* Set your desired height */
-    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    object-fit: cover;
   }
+  
+.experience-list {
+    padding: 50px;
+}
+
+.media-body {
+    margin: 60px;
+}
+
+.educacao {
+    padding: 40px;
+}
 
 .fas {
     margin: 10px;
@@ -83,4 +100,8 @@
 .contacts {
     font-family: Jura;
     font-size: 20px;;
+}
+
+#copyright {
+    margin: 15px;
 }
