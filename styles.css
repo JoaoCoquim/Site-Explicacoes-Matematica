@@ -27,6 +27,11 @@
     margin: 20px;
 }
 
+#about-me, #experiencia, #educacao, #footer {
+    scroll-margin-top: 102px; /* Adjust this value based on your navbar height */
+  }
+  
+
 .custom-jumbotron {
     background-image: url('/Images/notebook-computer-books.jpg');
     background-position: center;
@@ -102,6 +107,10 @@
 
 .educacao {
     padding: 40px;
+}
+
+.footer-line{
+    margin-top: 50px;
 }
 
 .fas {
