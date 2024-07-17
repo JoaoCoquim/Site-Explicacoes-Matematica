@@ -3,6 +3,10 @@
 ## Overview
 This project is a personal portfolio website designed to showcase Irina Oliveira's professional qualifications, academic background, and expertise as a Math tutor. The website serves as a platform to attract potential students interested in her tutoring services.
 
+## Screenshot
+![First View of Website](/Images/screenshot.png)
+*Screenshot showing the homepage of the website*
+
 ## Features
 - **Responsive Design**: Ensures the website looks great on both desktop and mobile devices, providing a seamless user experience.
 - **Curriculum Vitae**: Highlights Irina Oliveira's educational achievements, including degrees, certifications, and academic projects.
