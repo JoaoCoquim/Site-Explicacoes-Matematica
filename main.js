@@ -14,14 +14,12 @@ closeButton.addEventListener('click', (e) => {
 
 
 let isDragging = false;
-let offsetX, offsetY, startX, startY, transformX = 0, transformY = 0;
+let startX, startY, transformX = 0, transformY = 0;
 
 // Make popup draggable
 popup.addEventListener('mousedown', (e) => {
   isDragging = true;
   const rect = popup.getBoundingClientRect();
-  offsetX = e.clientX - rect.left;
-  offsetY = e.clientY - rect.top;
   startX = e.clientX;
   startY = e.clientY;
   popup.style.cursor = 'grabbing';
@@ -51,8 +49,6 @@ popup.addEventListener('touchstart', (e) => {
   isDragging = true;
   const touch = e.touches[0];
   const rect = popup.getBoundingClientRect();
-  offsetX = touch.clientX - rect.left;
-  offsetY = touch.clientY - rect.top;
   startX = touch.clientX;
   startY = touch.clientY;
   popup.style.cursor = 'grabbing';
