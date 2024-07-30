@@ -7,8 +7,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+
 .logo {
     position: relative;
     top: -5px;
@@ -19,7 +19,7 @@
 .navbar {
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 100;
 }
 
 .nav-link {
@@ -27,10 +27,12 @@
     margin: 20px;
 }
 
-#about-me, #experiencia, #educacao, #footer {
-    scroll-margin-top: 102px; /* Adjust this value based on your navbar height */
-  }
-  
+#about-me,
+#experience,
+#educacao,
+#contacts {
+    scroll-margin-top: 102px;  /* Adjust this value based on navbar height */
+}
 
 .custom-jumbotron {
     background-image: url('/Images/notebook-computer-books.jpg');
@@ -39,7 +41,9 @@
     background-repeat: no-repeat;
     height: 550px;
     display: flex;
-    align-items: center; /* This centers the content vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #jumbotron-bar {
@@ -57,7 +61,7 @@
 }
 
 .aboutme,
-.experience{
+.experience {
     padding: 30px;
 }
 
@@ -95,8 +99,8 @@
     height: 200px;
     margin: 20px;
     object-fit: cover;
-  }
-  
+}
+
 .experience-list {
     padding: 50px;
 }
@@ -109,7 +113,8 @@
     padding: 40px;
 }
 
-.footer-line{
+.footer-line,
+#footer {
     margin-top: 50px;
 }
 
@@ -119,10 +124,139 @@
 
 .contacts {
     font-family: Jura;
-    font-size: 20px;;
+    font-size: 20px;
 }
 
-#copyright {
-    margin: 15px;
+#experience {
+    padding-bottom: 50px;
 }
 
+.return {
+    padding-top: 50px;
+}
+
+#return-button:hover {
+    background-color: white;
+    color: #6C757D;
+    border-color: #6C757D;
+}
+
+.contact-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #6C757D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+    cursor: grab;
+}
+
+.contact-popup p {
+    margin: 0;
+}
+
+#close-popup {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6C757D;
+    background-color: white;
+    border: 1px solid #6C757D;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+#close-popup:hover {
+    color: black;
+    background-color: #f8f9fa;
+}
+
+
+
+/* Responsive adjustments */
+
+@media (max-width: 1200px) {
+    /* Large screens */
+    .custom-jumbotron {
+        height: 450px;
+    }
+    .jumbotron-title {
+        font-size: calc(1.5rem + 1.5vw);
+    }
+    .lead {
+        font-size: calc(1rem + 0.75vw);
+    }
+    .quote-text {
+        font-size: 1.1rem;
+    }
+    .quote-author {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Medium screens (tablets) */
+    .custom-jumbotron {
+        height: 400px;
+    }
+    .jumbotron-title {
+        font-size: calc(1.25rem + 1vw);
+    }
+    .lead {
+        font-size: calc(0.875rem + 0.5vw);
+    }
+    .quote-text {
+        font-size: 1rem;
+    }
+    .quote-author {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Small screens (phones) */
+    .custom-jumbotron {
+        height: 350px;
+    }
+    .jumbotron-title {
+        font-size: calc(1rem + 1vw);
+    }
+    .lead {
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .quote-text {
+        font-size: 0.9rem;
+    }
+    .quote-author {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Extra small screens */
+    .custom-jumbotron {
+        height: 300px;
+    }
+    .jumbotron-title {
+        font-size: 1.5rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+    .quote-text {
+        font-size: 0.85rem;
+    }
+    .quote-author {
+        font-size: 0.75rem;
+    }
+}

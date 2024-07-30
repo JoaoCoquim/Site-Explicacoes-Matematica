@@ -1,17 +1,19 @@
 # Irina Oliveira's Portfolio Website
 
 ## Overview
-This project is a personal portfolio website designed to showcase Irina Oliveira's professional qualifications, academic background, and expertise as a Math tutor. The website serves as a platform to attract potential students interested in her tutoring services.
+This project is a personal portfolio website designed to showcase Irina Oliveira's qualifications, expertise, and tutoring services in Mathematics. It serves as a platform for potential students to learn about Irina's background, experience, and how to get in touch with her.
 
 ## Screenshot
 ![First View of Website](/Images/screenshot.png)
 *Screenshot showing the homepage of the website*
 
 ## Features
-- **Responsive Design**: Ensures the website looks great on both desktop and mobile devices, providing a seamless user experience.
-- **Curriculum Vitae**: Highlights Irina Oliveira's educational achievements, including degrees, certifications, and academic projects.
-- **Math Tutoring Services**: Provides information about Irina Oliveira's tutoring experience, teaching philosophy, and contact details for potential students.
-- **Contact Form**: Allows visitors to easily get in touch with Irina Oliveira for inquiries or tutoring requests.
+- **Responsive Design**: The website is optimized for various devices, including desktops, tablets, and smartphones, ensuring a consistent and user-friendly experience across all screen sizes.
+- **Professional Profile**: Detailed information about Irina Oliveira's professional background, including her educational qualifications, teaching experience, and areas of expertise.
+- **Math Tutoring Services**: A dedicated section highlighting Irina’s approach to math tutoring, her qualifications, and the benefits of her personalized teaching methods.
+- **Interactive Timeline**: Displays Irina’s professional journey and key milestones in a visually appealing timeline format.
+- **Contact Information**: Easy access to Irina’s contact details and a functional contact button to schedule a tutoring session.
+- **Draggable Contact Popup**: An interactive popup that allows users to quickly view contact information and move the popup around the screen.
 
 ## Technologies Used
 - HTML
