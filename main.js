@@ -3,7 +3,7 @@ const closeButton = document.getElementById('close-popup');
 const experience = document.querySelector('.experience');
 
 experience.addEventListener('click', () => {
-  window.location.href = './experiencia.html';
+  window.location.href = './experience.html';
 });
 
 closeButton.addEventListener('click', (e) => {

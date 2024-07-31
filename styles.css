@@ -27,11 +27,44 @@
     margin: 20px;
 }
 
+#language-switcher {
+    width: 50px;
+    height: 20px;
+    top: 15px;
+    position: relative;
+    appearance: none;
+    border-radius: 30px;
+    background: #4b4b4b;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+#language-switcher::before {
+    content: "";
+    height: 15px;
+    width: 20px;
+    top: 12%;
+    left: 5px;
+    border-radius: 30px;
+    position: absolute;
+    background: #bbbbbb;
+}
+
+#language-switcher:checked:before {
+    left: 25px;
+    background: #fff;
+}
+
+#language-nav {
+    justify-content: right;
+}
+
 #about-me,
 #experience,
-#educacao,
+#education,
 #contacts {
-    scroll-margin-top: 102px;  /* Adjust this value based on navbar height */
+    scroll-margin-top: 102px;  /* Adjust value based on navbar height */
 }
 
 .custom-jumbotron {
@@ -109,7 +142,7 @@
     margin: 60px;
 }
 
-.educacao {
+.education {
     padding: 40px;
 }
 
