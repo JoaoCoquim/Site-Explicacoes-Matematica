@@ -22,7 +22,6 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Explicações de Matemática">
 
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -30,17 +29,17 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="timeline.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/timeline.css">
 
   <title>Irina Oliveira</title>
-  <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
 </head>
 
 <body class="bg-white">
   <!-- Navbar Component -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <a class="navbar-brand" href="/index.html"><img class="logo" src="/Images/io_graph_logo-removebg.png"
+    <a class="navbar-brand" href="../html/index.html"><img class="logo" src="../img/io_graph_logo-removebg.png"
         alt="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,19 +49,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/index.html">Home</a>
+          <a class="nav-link" href="../html/index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about-me" data-translate="nav_about"></a>
+          <a class="nav-link" href="#about-me" data-translate="about-me"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#experience" data-translate="nav_experience"></a>
+          <a class="nav-link" href="#experience" data-translate="experience"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#education" data-translate="nav_education"></a>
+          <a class="nav-link" href="#education" data-translate="education"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contacts" data-translate="nav_contacts"></a>
+          <a class="nav-link" href="#contacts" data-translate="contacts"></a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
@@ -76,24 +75,20 @@
   </nav>
   <!-- Navbar End -->
 
-  <!-- Jumbotron -->
+  <!-- Jumbotron with Main Title -->
   <div class="jumbotron jumbotron-fluid custom-jumbotron">
     <div class="bg-secondary text-center" id="jumbotron-bar">
-      <h1 class="display-1 text-white jumbotron-title">Explicações de Matemática</h1>
-      <p class="lead text-white font-italic">Apoio Personalizado para Alunos de Todas as Idades</p>
+      <h1 class="display-1 text-white jumbotron-title" data-translate="title"></h1>
+      <p class="lead text-white font-italic" data-translate="subtitle"></p>
     </div>
   </div>
   <!-- End of Jumbotron -->
 
   <!-- Container -->
   <div class="container">
-    <!-- Quote Section -->
     <div class="row">
       <div class="col text-secondary font-italic my-5">
-        <h2 class="font-weight-light quote-text">"Com um Mestrado em Matemática e uma carreira internacional em colégios
-          privados,
-          trago a minha experiência e paixão pelo ensino, seja presencialmente ou online. Transformar desafios em
-          conquistas é o meu objetivo, e o sucesso dos meus alunos é a minha maior recompensa."</h2>
+        <h2 class="font-weight-light quote-text" data-translate="quote-text"></h2>
         <p class="font-weight-bold text-right quote-author">- Irina Oliveira</p>
       </div>
     </div>
@@ -108,7 +103,7 @@
   <section class="container-fluid aboutme">
     <div class="row">
       <div class="col my-4">
-        <h2 class="text-secondary text-center display-4 my-4" id="about-me">Sobre mim</h2>
+        <h2 class="text-secondary text-center display-4 my-4" id="about-me" data-translate="about-me"></h2>
       </div>
     </div>
 
@@ -117,11 +112,10 @@
       <div class="col-8 col-md-4 aboutme-card">
         <!-- First card -->
         <div class="card border-0">
-          <img src="/Images/Experience-removebg.png" class="card-img-top" alt="Experience card">
+          <img src="../img/Experience-removebg.png" class="card-img-top" alt="Experience card">
           <div class="card-body">
-            <h5 class="text-center">Experiente</h5>
-            <p class="card-text text-center text-secondary">Com experiência de ensino em colégios privados, Irina traz
-              uma perspectiva global e diversificada para o ensino da Matemática.</p>
+            <h5 class="text-center" data-translate="experienced"></h5>
+            <p class="card-text text-center text-secondary" data-translate="experienced_description"></p>
           </div>
         </div>
       </div>
@@ -129,12 +123,10 @@
       <div class="col-8 col-md-4 aboutme-card">
         <!-- Second card -->
         <div class="card border-0">
-          <img src="Images/qualified_gray_within-removebg.png" class="card-img-top" alt="Qualified card">
+          <img src="../img/qualified_gray_within-removebg.png" class="card-img-top" alt="Qualified card">
           <div class="card-body">
-            <h5 class="text-center">Qualificada</h5>
-            <p class="card-text text-center text-secondary">Possui um Mestrado em Matemática, garantindo um
-              conhecimento
-              sólido e atualizado na disciplina, essencial para oferecer explicações detalhadas e eficazes.</p>
+            <h5 class="text-center" data-translate="qualified"></h5>
+            <p class="card-text text-center text-secondary" data-translate="qualified_description"></p>
           </div>
         </div>
       </div>
@@ -142,13 +134,10 @@
       <div class="col-8 col-md-4 aboutme-card">
         <!-- Third card -->
         <div class="card border-0">
-          <img src="Images/dedicated-removebg.png" class="card-img-top" alt="Dedicated card">
+          <img src="../img/dedicated-removebg.png" class="card-img-top" alt="Dedicated card">
           <div class="card-body">
-            <h5 class="text-center">Dedicada</h5>
-            <p class="card-text text-center text-secondary">Com anos de prática em ensino particular, Irina
-              desenvolveu
-              uma metodologia personalizada que se adapta às necessidades individuais de cada aluno, resultando em
-              sucesso acadêmico consistente.</p>
+            <h5 class="text-center" data-translate="dedicated"></h5>
+            <p class="card-text text-center text-secondary" data-translate="dedicated_description"></p>
           </div>
         </div>
       </div>
@@ -160,7 +149,7 @@
   <section class="experience">
     <div class="row bg-white">
       <div class="col">
-        <h2 class="text-secondary text-center display-4 my-4" id="experience">Experiência</h2>
+        <h2 class="text-secondary text-center display-4 my-4" id="experience" data-translate="experience"></h2>
       </div>
     </div>
 
@@ -169,46 +158,46 @@
       <div class="container-fluid">
         <ul class="timeline">
           <li class="titles-only">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="Images/maths-tutor.jpg"
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="../img/maths-tutor.jpg"
                 alt="explicacoes logo" /></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>2016 - Presente</h4>
-                <h5 class="subheading">Explicadora independente presencial e online</h5>
+                <h4 data-translate="current_role"></h4>
+                <h5 class="subheading" data-translate="independent_tutor"></h5>
               </div>
             </div>
           </li>
           <li class="timeline-inverted timeline-centered">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="Images/mario_sacramento_logo.png"
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="../img/mario_sacramento_logo.png"
                 alt="fontana logo" /></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4>2016</h4>
-                <h5 class="subheading">Estágio como Professora na Escola Secundária Dr. Mário Sacramento</h5>
+                <h5 class="subheading" data-translate="teaching_internship"></h5>
               </div>
             </div>
           </li>
           <li class="titles-only">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="Images/logo-fontana-round.jpg"
+            <div class="timeline-image"><img class="rounded-circle img-fluid" src="../img/logo-fontana-round.jpg"
                 alt="fontana logo" /></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>Setembro 2014 - Junho 2015</h4>
-                <h5 class="subheading">Professora Bilíngue de Matemática (6º e 7º ano) no Gimnásio Fontana</h5>
+                <h4 data-translate="september_2014_june_2015"></h4>
+                <h5 class="subheading" data-translate="bilingual_teacher_fontana"></h5>
               </div>
             </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image"><img class="rounded-circle img-fluid"
-                src="Images/logo-britanico-round-removebg.png" alt="britanico logo" /></div>
+                src="../img/logo-britanico-round-removebg.png" alt="britanico logo" /></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>Janeiro 2014 - Setembro 2014</h4>
-                <h5 class="subheading">Coordenadora de Matemática (Ensino Primário) no Gimnásio Británico</h5>
+                <h4 data-translate="january_2014_september_2014"></h4>
+                <h5 class="subheading" data-translate="math_coordinator_britanico"></h5>
               </div>
               <div class="timeline-heading">
-                <h4>Agosto 2013 - Setembro 2014</h4>
-                <h5 class="subheading">Professora Bilíngue de Matemática (3º ano) no Gimnásio Británico</h5>
+                <h4 data-translate="august_2013_september_2014"></h4>
+                <h5 class="subheading" data-translate="bilingual_teacher_britanico"></h5>
               </div>
             </div>
           </li>
@@ -216,30 +205,28 @@
       </div>
     </section>
     <!-- End of Timeline -->
-
   </section>
   <!-- End of Experiência -->
 
   <!-- Educação -->
   <div class="row bg-white">
     <div class="col">
-      <h2 class="text-secondary text-center display-4 my-4" id="education">Educação</h2>
+      <h2 class="text-secondary text-center display-4 my-4" id="education" data-translate="education"></h2>
     </div>
   </div>
 
   <div class="container education">
     <div class="row justify-content-center align-items-center text-center text-md-left">
       <div class="col-8 col-md-6 col-lg-5 mb-4 mb-md-0 align-self-center">
-        <img class="mr-5 img-fluid rounded-circle" id="ua-image" src="Images/logo-ua-round.jpg" alt="ua logo">
+        <img class="mr-5 img-fluid rounded-circle" id="ua-image" src="../img/logo-ua-round.jpg" alt="ua logo">
       </div>
       <div class="col-8 col-md-6 col-lg-7">
-        <h3 class="mt-0 mb-1">Mestrado em Educação Matemática (Ensino Básico e Secundário)</h3>
-        <p class="mb-2"><strong>Tese:</strong> Pensamento Crítico e Literacia Matemática: um estudo de caso numa turma
-          do 8º ano</p>
-        <p class="mb-2"><strong>Estágio:</strong> Escola Dr. Mário Sacramento</p>
-        <p class="mb-4"><strong>Orientadores:</strong> Prof. Isabel Brás e Prof. Maria João Naia</p>
-        <h3 class="mt-4 mb-1">Licenciada em Matemática Avançada</h3>
-        <p class="mb-0">Mestrado em Gestão</p>
+        <h3 class="mt-0 mb-1" data-translate="masters_education"></h3>
+        <p class="mb-2" data-translate="thesis"></p>
+        <p class="mb-2" data-translate="internship_location"></p>
+        <p class="mb-4" data-translate="supervisors"></p>
+        <h3 class="mt-4 mb-1" data-translate="bachelor_mathematics"></h3>
+        <p class="mb-0" data-translate="masters_management"></p>
       </div>
     </div>
   </div>
@@ -247,17 +234,23 @@
 
   <hr class="footer-line">
 
+  <!-- Popup -->
   <div class="contact-popup">
     <div class='row'>
       <div class='col'>
-        <p><strong>Contacta-me:</strong> <br> +351 912 733 683 <br> aveiro.matematica@gmail.com</p>
+        <p><strong data-translate="contact-me"></strong> <br> +351 912 733 683 <br>
+          aveiro.matematica@gmail.com</p>
       </div>
       <div class='col'>
         <p id="close-popup">x</p>
       </div>
     </div>
   </div>
+  <!-- End of Popup -->
 
+  <script src="../js/main.js"></script>
+  <script src="../js/translations.js"></script>
+  <script src="../js/navbar-toggle.js"></script>
   <!-- Bootstrap's JavaScript Files -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -268,18 +261,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-  <script src="main.js"></script>
 </body>
 
 <!-- Footer -->
 <footer class="bg-white text-center text-dark mt-xl-5 pt-1" id="contacts">
   <!-- Grid container -->
   <div class="container p-4">
-    <!--Grid row-->
     <div class="row">
-      <!--Grid column-->
       <div class="col-lg-6 col-md-6 mb-4 mb-lg-0">
-        <h5 class="text-uppercase mb-4">Contactos</h5>
+        <!-- Contactos -->
+        <h5 class="text-uppercase mb-4" data-translate="contacts"></h5>
         <ul class="list-unstyled">
           <!--li>
                 <i class="fas fa-map-marker-alt pe-2"><span class="contacts"> Aveiro, Portugal</span></i>
@@ -292,22 +283,21 @@
           </li>
         </ul>
       </div>
-      <!--Grid column-->
 
-      <!--Grid column-->
+      <!-- Contacta-me -->
       <div class="col-lg-6 col-md-6 mb-4 mb-lg-0">
-        <h5 class="text-uppercase mb-4">Contacta-me</h5>
-        <a href="mailto:aveiro.matematica@gmail.com" class="btn btn-secondary btn-lg" id="contact-button">Agenda uma
-          aula</a>
+        <h5 class="text-uppercase mb-4" data-translate="contact-me"></h5>
+        <a href="mailto:aveiro.matematica@gmail.com" class="btn btn-secondary btn-lg" id="contact-button"
+          data-translate="schedule-class"></a>
       </div>
-      <!--Grid column-->
     </div>
-    <!--Grid row-->
   </div>
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3 border-white" id="copyright">© 2024 Irina Oliveira</div>
+  <div class="text-center p-3 border-white" id="copyright">
+    © 2024 Irina Oliveira | Website developed by João Coquim
+  </div>
   <!-- Copyright -->
 </footer>
 

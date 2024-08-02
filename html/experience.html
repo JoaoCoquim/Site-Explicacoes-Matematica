@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/timeline.css">
+    <title>Irina Oliveira</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+
+<body class="bg-white">
+    <!-- Navbar Component -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="../html/index.html"><img class="logo" src="../img/io_graph_logo-removebg.png"
+                alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../html/index.html">Home</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" id="language-nav">
+                    <label class="nav-link">Language [PT/EN]
+                        <input type="checkbox" id="language-switcher">
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="row bg-white">
+        <div class="col">
+            <h2 class="text-secondary text-center display-4 my-4" id="experience" data-translate="experience"></h2>
+        </div>
+    </div>
+    <!-- Start of List Based Media -->
+    <!-- Experiência -->
+    <section class="page-section">
+        <div class="container-fluid">
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="../img/maths-tutor.jpg"
+                            alt="explicacoes logo" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 data-translate="current_role"></h4>
+                            <h4 class="subheading" data-translate="independent_tutor"></h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" data-translate="current_role_description"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                            src="../img/mario_sacramento_logo.png" alt="fontana logo" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2016</h4>
+                            <h4 class="subheading" data-translate="teaching_internship"></h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" data-translate="teaching_internship_description"></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                            src="../img/logo-fontana-round.jpg" alt="fontana logo" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 data-translate="september_2014_june_2015"></h4>
+                            <h4 class="subheading" data-translate="bilingual_teacher_fontana"></h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" data-translate="bilingual_teacher_fontana_description"></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                            src="../img/logo-britanico-round-removebg.png" alt="britanico logo" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 data-translate="january_2014_september_2014"></h4>
+                            <h4 class="subheading" data-translate="math_coordinator_britanico"></h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" data-translate="math_coordinator_britanico_description"></p>
+                        </div>
+                        <div class="timeline-heading">
+                            <h4 data-translate="august_2013_september_2014"></h4>
+                            <h4 class="subheading" data-translate="bilingual_teacher_britanico"></h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" data-translate="bilingual_teacher_britanico_description"></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="../img/logo-ua-round.jpg"
+                            alt="fontana logo" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2010 - 2012</h4>
+                            <h4 class="subheading" data-translate="advanced_math_student"></h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted" data-translate="advanced_math_student_description">Texto experimental</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End of Experiência -->
+
+    <div class="text-center return">
+        <a href="../html/index.html" name="txtVoltar" class="btn btn-secondary btn-lg" id="return-button" data-translate="homepage_return"></a>
+    </div>
+
+    <script src="../js/translations.js"></script>
+    <script src="../js/navbar-toggle.js"></script>
+    <!-- Bootstrap's JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <div class="text-center p-3 border-top border-white" id="footer">
+        © 2024 Irina Oliveira | Website developed by João Coquim
+    </div>
+</footer>
+
+</html>

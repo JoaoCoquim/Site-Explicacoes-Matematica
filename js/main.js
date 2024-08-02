@@ -3,7 +3,7 @@ const closeButton = document.getElementById('close-popup');
 const experience = document.querySelector('.experience');
 
 experience.addEventListener('click', () => {
-  window.location.href = './experience.html';
+  window.location.href = '../html/experience.html';
 });
 
 closeButton.addEventListener('click', (e) => {
@@ -72,64 +72,4 @@ document.addEventListener('touchend', () => {
     isDragging = false;
     popup.style.cursor = 'grab';
   }
-});
-
-
-// Function to load content dynamically
-function loadContent(url, callback) {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      callback(xhr.responseText);
-    }
-  };
-  xhr.send();
-}
-
-// Handle dynamic content loading
-function handleNavigation(e) {
-  e.preventDefault();
-  const target = e.target.getAttribute('href');
-  if (target && target !== '#') {
-    loadContent(target, function (content) {
-      document.getElementById('dynamic-content').innerHTML = content;
-    });
-  }
-}
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const checkbox = document.getElementById('language-switcher');
-  let translations = {};
-
-  // Function to fetch and load translations
-  async function loadTranslations() {
-      try {
-          const response = await fetch('translations.json');
-          translations = await response.json();
-          updateContent();
-      } catch (error) {
-          console.error('Error loading translations:', error);
-      }
-  }
-
-  // Function to update content based on selected language
-  function updateContent() {
-      const language = checkbox.checked ? 'en' : 'pt';
-      const elementsToTranslate = document.querySelectorAll('[data-translate]');
-
-      elementsToTranslate.forEach(element => {
-          const key = element.getAttribute('data-translate');
-          element.textContent = translations[language][key] || '';
-      });
-
-      checkbox.nextElementSibling.textContent = checkbox.checked ? 'Switch to English' : 'Switch to Portuguese';
-  }
-
-  // Initial load and content update
-  loadTranslations();
-
-  // Event listener for checkbox change
-  checkbox.addEventListener('change', updateContent);
 });
