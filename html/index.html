@@ -66,7 +66,9 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item" id="language-nav">
-          <label class="nav-link">Language [PT/EN]
+          <img src="../img/pt.svg" alt="Portuguese Flag" class="flag-icon">
+          <img src="../img/uk.svg" alt="English Flag" class="flag-icon">
+          <label>
             <input type="checkbox" id="language-switcher">
           </label>
         </li>
@@ -147,7 +149,7 @@
 
   <!-- Experiência -->
   <section class="experience">
-    <div class="row bg-white">
+    <div class="row">
       <div class="col">
         <h2 class="text-secondary text-center display-4 my-4" id="experience" data-translate="experience"></h2>
       </div>
@@ -209,27 +211,29 @@
   <!-- End of Experiência -->
 
   <!-- Educação -->
-  <div class="row bg-white">
-    <div class="col">
-      <h2 class="text-secondary text-center display-4 my-4" id="education" data-translate="education"></h2>
+  <section class="education">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-secondary text-center display-4 my-4" id="education" data-translate="education"></h2>
+      </div>
     </div>
-  </div>
 
-  <div class="container education">
-    <div class="row justify-content-center align-items-center text-center text-md-left">
-      <div class="col-8 col-md-6 col-lg-5 mb-4 mb-md-0 align-self-center">
-        <img class="mr-5 img-fluid rounded-circle" id="ua-image" src="../img/logo-ua-round.jpg" alt="ua logo">
-      </div>
-      <div class="col-8 col-md-6 col-lg-7">
-        <h3 class="mt-0 mb-1" data-translate="masters_education"></h3>
-        <p class="mb-2" data-translate="thesis"></p>
-        <p class="mb-2" data-translate="internship_location"></p>
-        <p class="mb-4" data-translate="supervisors"></p>
-        <h3 class="mt-4 mb-1" data-translate="bachelor_mathematics"></h3>
-        <p class="mb-0" data-translate="masters_management"></p>
+    <div class="container education">
+      <div class="row justify-content-center align-items-center text-center text-md-left">
+        <div class="col-6 col-md-6 col-lg-5 mb-4 mb-md-0 align-self-center">
+          <img class="mr-5 img-fluid rounded-circle" id="ua-image" src="../img/logo-ua-round.jpg" alt="ua logo">
+        </div>
+        <div class="col-10 col-md-6 col-lg-7">
+          <h3 class="mt-0 mb-1" data-translate="masters_education"></h3>
+          <p class="mb-2" data-translate="thesis"></p>
+          <p class="mb-2" data-translate="internship_location"></p>
+          <p class="mb-4" data-translate="supervisors"></p>
+          <h3 class="mt-4 mb-1" data-translate="bachelor_mathematics"></h3>
+          <p class="mb-0" data-translate="masters_management"></p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- End of Educação-->
 
   <hr class="footer-line">
@@ -237,11 +241,18 @@
   <!-- Popup -->
   <div class="contact-popup">
     <div class='row'>
-      <div class='col'>
-        <p><strong data-translate="contact-me"></strong> <br> +351 912 733 683 <br>
-          aveiro.matematica@gmail.com</p>
+      <div class='col-10'>
+        <p>
+          <strong data-translate="contact-me"></strong>
+        <div class="phone-container">
+          <div class="fas fa-phone"></div>+351 912 733 683
+        </div>
+        <div class="email-container">
+          <div class="fas fa-envelope"></div>aveiro.matematica@gmail.com
+        </div>
+        </p>
       </div>
-      <div class='col'>
+      <div class='col-2'>
         <p id="close-popup">x</p>
       </div>
     </div>
@@ -249,8 +260,8 @@
   <!-- End of Popup -->
 
   <script src="../js/main.js"></script>
+  <script src="../js/draggable-popup.js"></script>
   <script src="../js/translations.js"></script>
-  <script src="../js/navbar-toggle.js"></script>
   <!-- Bootstrap's JavaScript Files -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -276,10 +287,13 @@
                 <i class="fas fa-map-marker-alt pe-2"><span class="contacts"> Aveiro, Portugal</span></i>
               </li-->
           <li>
-            <div class="fas fa-phone pe-2"><span class="contacts"> +351 912 733 683</div>
+            <div class="fas fa-phone"><span class="contacts"> +351 912 733 683</div>
           </li>
           <li>
-            <div class="fas fa-envelope pe-2"><span class="contacts"> aveiro.matematica@gmail.com</span></div>
+            <div class="fas fa-envelope"><span class="contacts"> aveiro.matematica@gmail.com</span></div>
+          </li>
+          <li>
+
           </li>
         </ul>
       </div>
