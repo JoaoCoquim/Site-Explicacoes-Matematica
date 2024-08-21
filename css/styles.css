@@ -197,20 +197,21 @@ input[type="checkbox"]:checked {
     bottom: 20px;
     right: 20px;
     max-width: 320px;
+    min-width: 200px;
     background-color: white;
     color: black;
     border: 2px solid #6C757D;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     text-align: center;
+    overflow-wrap: break-word;
     cursor: grab;
 }
 
 .contact-popup p {
     margin: 0;
-
 }
 
 #close-popup {
@@ -284,6 +285,26 @@ input[type="checkbox"]:checked {
     .quote-author {
         font-size: 0.85rem;
     }
+
+    .contact-popup {
+        max-width: 280px;
+        padding: 10px;
+    }
+
+    .contact-popup p {
+        font-size: 14px;
+    }
+
+    
+    .phone-container, .email-container {
+        font-size: 15px;
+    }
+
+    #close-popup {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -308,6 +329,25 @@ input[type="checkbox"]:checked {
     .quote-author {
         font-size: 0.8rem;
     }
+
+    .contact-popup {
+        max-width: 280px;
+        padding: 10px;
+    }
+
+    .contact-popup p {
+        font-size: 14px;
+    }
+
+    .phone-container, .email-container {
+        font-size: 14px;
+    }
+
+    #close-popup {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -331,5 +371,24 @@ input[type="checkbox"]:checked {
 
     .quote-author {
         font-size: 0.75rem;
+    }
+
+    .contact-popup {
+        max-width: 250px;
+        padding: 8px;
+    }
+
+    .contact-popup p {
+        font-size: 12px;
+    }
+    
+    .phone-container, .email-container {
+        font-size: 12px;
+    }
+
+    #close-popup {
+        width: 15px;
+        height: 15px;
+        font-size: 8px;
     }
 }
