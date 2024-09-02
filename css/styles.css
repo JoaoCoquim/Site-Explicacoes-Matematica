@@ -169,12 +169,12 @@ input[type="checkbox"]:checked {
     font-size: 20px;
 }
 
-#experience {
-    padding-bottom: 50px;
+.return {
+    padding-top: 30px;
 }
 
-.return {
-    padding-top: 50px;
+#footer {
+    margin-top: 50px;
 }
 
 #return-button:hover {
