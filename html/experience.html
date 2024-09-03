@@ -30,19 +30,18 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="../html/index.html">Home</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" id="language-nav">
-                  <img src="../img/pt.svg" alt="Portuguese Flag" class="flag-icon">
-                  <img src="../img/uk.svg" alt="English Flag" class="flag-icon">
-                  <label>
-                    <input type="checkbox" id="language-switcher">
-                  </label>
+                    <select id="language-selector">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                    </select>
                 </li>
-              </ul>
+            </ul>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -125,7 +124,8 @@
                             <h4 class="subheading" data-translate="advanced_math_student"></h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted" data-translate="advanced_math_student_description">Texto experimental</p>
+                            <p class="text-muted" data-translate="advanced_math_student_description">Texto experimental
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -135,7 +135,8 @@
     <!-- End of Experiência -->
 
     <div class="text-center return">
-        <a href="../html/index.html" name="txtVoltar" class="btn btn-secondary btn-lg" id="return-button" data-translate="homepage_return"></a>
+        <a href="../html/index.html" name="txtVoltar" class="btn btn-secondary btn-lg" id="return-button"
+            data-translate="homepage_return"></a>
     </div>
 
     <script src="../js/translations.js"></script>
