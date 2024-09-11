@@ -4,7 +4,7 @@
 This project is a personal portfolio website designed to showcase Irina Oliveira's qualifications, expertise, and tutoring services in Mathematics. It serves as a platform for potential students to learn about Irina's background, experience, and how to get in touch with her.
 
 ## Screenshot
-![First View of Website](img/screenshot.png)
+![First View of Website](img/screenshots/homepage.jpg)
 *Screenshot showing the homepage of the website*
 
 ## Features
