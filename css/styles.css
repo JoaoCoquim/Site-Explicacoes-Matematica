@@ -40,6 +40,10 @@
     margin: 10px 20px;
 }
 
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
 #language-nav {
     margin-right: 20px;
 }
@@ -98,6 +102,10 @@
     text-align: center;
 }
 
+#subtitle {
+    font-style: italic;
+}
+
 header.masthead {
     padding-bottom: calc(10rem - 4.5rem);
     background: url("../img/notebook-computer-books.jpg");
@@ -113,6 +121,7 @@ header.masthead h1,
 header.masthead .h1 {
     font-size: 2.25rem;
 }
+
 
 @media (min-width: 992px) {
     header.masthead {
@@ -140,9 +149,15 @@ header.masthead .h1 {
     }
 }
 
-#competencias {
-    color: #6C757D;
+.services .card {
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.services .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 .aboutme {
     width: 80%;
@@ -342,10 +357,6 @@ header.masthead .h1 {
     #title {
         font-size: 80px;
         white-space: wrap;
-    }
-
-    #subtitle {
-        font-size: 20px;
     }
 
     .lead {
