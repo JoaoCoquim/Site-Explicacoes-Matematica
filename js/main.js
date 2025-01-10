@@ -1,9 +1,5 @@
 const experience = document.querySelector('.experience');
 
-experience.addEventListener('click', () => {
-  window.location.href = '../html/experience.html';
-});
-
 // Navbar collapse on mobile
 document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.navbar-nav > li > a');

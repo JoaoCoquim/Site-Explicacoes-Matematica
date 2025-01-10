@@ -69,6 +69,8 @@
 #about-me,
 #experience,
 #education,
+#services,
+#testimonials,
 #contacts {
     scroll-margin-top: 102px;
 }
@@ -100,15 +102,17 @@
     letter-spacing: 0.5rem;
     color: white;
     text-align: center;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 #subtitle {
     font-style: italic;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 header.masthead {
     padding-bottom: calc(10rem - 4.5rem);
-    background: url("../img/notebook-computer-books.jpg");
+    background: url("../img/map.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -142,7 +146,6 @@ header.masthead .h1 {
 }
 
 @media (min-width: 1200px) {
-
     header.masthead h1,
     header.masthead .h1 {
         font-size: 3.5rem;
@@ -157,7 +160,6 @@ header.masthead .h1 {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 .aboutme {
     width: 80%;
@@ -184,25 +186,134 @@ header.masthead .h1 {
     padding-bottom: 40px;
 }
 
-#contact-button:hover {
-    background-color: white;
-    color: #6C757D;
-    border-color: #6C757D;
+.testimonial-card {
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.media-image {
+.testimonial-img {
     width: 200px;
     height: 200px;
-    margin: 20px;
     object-fit: cover;
+    margin-right: 20px;
 }
 
-.experience-list {
-    padding: 50px;
+.testimonial-text {
+    max-width: 500px;
 }
 
-.media-body {
-    margin: 60px;
+.testimonial-quote {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.blockquote-footer {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #395594;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: inherit;
+    border: none;
+    padding: 10px;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.online-tutoring-section {
+    padding: 0 20px 50px 0;
+}
+
+.online-tutoring-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.online-tutoring-section .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.online-tutoring-section .text {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.online-tutoring-section .text p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.online-tutoring-section .text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.online-tutoring-section .text ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.online-tutoring-section .text .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.online-tutoring-section .text .cta-button:hover {
+    background-color: #0056b3;
+}
+
+.online-tutoring-img {
+    flex: 1 1 auto;
+}
+
+.online-tutoring-img img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-button:hover {
+    background-color: #0056b3;
 }
 
 .footer-line {
@@ -249,11 +360,12 @@ header.masthead .h1 {
     min-width: 200px;
     background-color: white;
     color: black;
+    opacity: 0.7;
     border: 2px solid #6C757D;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    z-index: 99;
     text-align: center;
     overflow-wrap: break-word;
     cursor: grab;
@@ -264,27 +376,30 @@ header.masthead .h1 {
 }
 
 #close-popup {
-    cursor: pointer;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
-    color: #6C757D;
-    background-color: white;
-    border: 1px solid #6C757D;
-    border-radius: 5px;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-}
-
-#close-popup:hover {
     color: black;
-    background-color: #f8f9fa;
-}
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  #close-popup:hover {
+    color: #0056b3;
+  }
 
-
+.contact-popup {
+    animation: slideIn 1s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 /* Responsive adjustments */
 
@@ -371,6 +486,69 @@ header.masthead .h1 {
         font-size: 0.8rem;
     }
 
+    .testimonial-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-img-wrapper {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-text {
+        max-width: 100%;
+    }
+
+    .testimonial-quote {
+        font-size: 1.3rem;
+    }
+
+    .online-tutoring-section {
+        padding: 40px 15px;
+    }
+
+    .online-tutoring-section .container {
+        text-align: center;
+    }
+
+    .online-tutoring-section .content {
+        flex-direction: column;
+    }
+
+    .online-tutoring-section .text {
+        flex: 1 1 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .online-tutoring-section .text ul {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .online-tutoring-section .visual {
+        flex: 1 1 100%;
+    }
+
+    .online-tutoring-section .visual img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .online-tutoring-section .text .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .online-tutoring-section .section-title {
+        font-size: 2rem;
+    }
+
     .contact-popup {
         max-width: 280px;
         padding: 10px;
@@ -410,6 +588,26 @@ header.masthead .h1 {
 
     .quote-author {
         font-size: 0.75rem;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+    }
+
+    .testimonial-img-wrapper {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial-quote {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
     }
 
     .contact-popup {

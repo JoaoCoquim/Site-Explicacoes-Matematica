@@ -50,9 +50,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><a class="nav-link" href="../html/index.html">Home</a>
         <li class="nav-item"><a class="nav-link" href="#services" data-translate="services"></a></li>
-        <li class="nav-item"><a class="nav-link" href="#about-me" data-translate="about-me"></a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience" data-translate="experience"></a></li>
-        <li class="nav-item"><a class="nav-link" href="#education" data-translate="education"></a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/experience.html" data-translate="about-me"></a></li>
         <li class="nav-item"><a class="nav-link" href="#contacts" data-translate="contacts"></a></li>
       </ul>
       <ul class="navbar-nav ml-auto">
@@ -72,7 +70,6 @@
       <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-8 align-self-end">
           <h1 class="font-weight-bold" id="title" data-translate="title">
-            </p>
         </div>
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white mb-5" id="subtitle" data-translate="subtitle"></p>
@@ -93,29 +90,6 @@
 
   </div>
   <!-- End of Container -->
-
-  <!-- Visão >
-  <section class="vision">
-    <div class="row">
-      <div class="col">
-        <h2 class="text-secondary text-center display-4 my-4" id="vision" data-translate="vision"></h2>
-      </div>
-    </div>
-
-    <div class="container education">
-      <div class="row justify-content-center align-items-center text-center text-md-left">
-        <div class="col-6 col-md-6 col-lg-5 mb-4 mb-md-0 align-self-center">
-          <img class="mr-5 img-fluid rounded-circle" id="ua-image" src="../img/vision.png" alt="ua logo">
-        </div>
-        <div class="col-10 col-md-6 col-lg-7">
-          <h3 class="mt-0 mb-1" data-translate="autonomy"></h3>
-          <h3 class="mt-0 mb-1" data-translate="critical_thinking"></h3>
-          <h3 class="mt-0 mb-1" data-translate="mathematical_literacy"></h3>
-        </div>
-      </div>
-    </div>
-  </section>
-  <End of Visão-->
 
   <!-- Serviços -->
   <section class="services container-fluid">
@@ -175,141 +149,97 @@
   </section>
   <!-- End of Serviços -->
 
-
-  <!-- Sobre mim -->
-  <section class="container-fluid aboutme">
+  <!-- Testemunhos -->
+  <section class="testimonials container-fluid">
     <div class="row">
       <div class="col my-4">
-        <h2 class="text-secondary text-center display-4 my-4" id="about-me" data-translate="about-me"></h2>
+        <h2 class="text-secondary text-center display-4 my-4" id="testimonials" data-translate="testimonials"></h2>
       </div>
     </div>
 
-    <!-- First Card Section -->
-    <div class="row justify-content-center">
-      <div class="col-8 col-md-4">
-        <!-- First card -->
-        <div class="card border-0">
-          <img src="../img/Experience-removebg.png" class="card-img-top" alt="Experience card">
-          <div class="card-body">
-            <h5 class="text-center" data-translate="experienced"></h5>
-            <p class="card-text text-center text-secondary" data-translate="experienced_description"></p>
+    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Testemunho 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="testimonial-card">
+              <img src="../img/student_pic1.jpg" class="testimonial-img rounded-circle mr-4" alt="João Silva">
+              <div class="testimonial-text">
+                <p class="testimonial-quote">"As explicações foram uma experiência incrível! A ajuda foi fundamental
+                  para
+                  melhorar o meu desempenho na Matemática, e as explicações foram super claras e detalhadas!"</p>
+                <footer class="blockquote-footer">Carlos Rocha, <cite title="Source Title">12º ano - Preparação para
+                    Exames</cite></footer>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testemunho 2 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="testimonial-card">
+              <img src="../img/student_pic2.jpg" class="testimonial-img rounded-circle mr-4" alt="Marta Pereira">
+              <div class="testimonial-text">
+                <p class="testimonial-quote">"A abordagem da Irina foi fantástica! As aulas foram bem adaptadas ao meu
+                  ritmo, e sinto-me muito mais confiante."</p>
+                <footer class="blockquote-footer">Beatriz Teles, <cite title="Source Title">Universidade de Aveiro -
+                    Matemática</cite></footer>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testemunho 3 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="testimonial-card">
+              <img src="../img/student_pic3.jpg" class="testimonial-img rounded-circle mr-4" alt="Carlos Rocha">
+              <div class="testimonial-text">
+                <p class="testimonial-quote">"Recomendo muito! As explicações foram claras e a Irina esteve sempre
+                  disponível
+                  para tirar dúvidas fora das aulas."</p>
+                <footer class="blockquote-footer">Ana Silva, <cite title="Source Title">Aluno do 11º ano</cite>
+                </footer>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="col-8 col-md-4">
-        <!-- Second card -->
-        <div class="card border-0">
-          <img src="../img/qualified_gray_within-removebg.png" class="card-img-top" alt="Qualified card">
-          <div class="card-body">
-            <h5 class="text-center" data-translate="qualified"></h5>
-            <p class="card-text text-center text-secondary" data-translate="qualified_description"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-8 col-md-4">
-        <!-- Third card -->
-        <div class="card border-0">
-          <img src="../img/dedicated-removebg.png" class="card-img-top" alt="Dedicated card">
-          <div class="card-body">
-            <h5 class="text-center" data-translate="dedicated"></h5>
-            <p class="card-text text-center text-secondary" data-translate="dedicated_description"></p>
-          </div>
-        </div>
-      </div>
+      <!-- Controles do carousel -->
+      <button class="carousel-control-prev" type="button" data-target="#testimonialCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#testimonialCarousel" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
     </div>
   </section>
-  <!-- End of First Card section -->
 
-  <!-- Experiência -->
-  <section class="experience">
+  <!-- Explicações Online -->
+  <section id="online-tutoring" class="online-tutoring-section">
     <div class="row">
-      <div class="col">
-        <h2 class="text-secondary text-center display-4 my-4" id="experience" data-translate="experience"></h2>
+      <div class="col my-4">
+        <h2 class="text-secondary text-center display-4 my-4" id="online_tutoring" data-translate="online_tutoring">
+        </h2>
       </div>
     </div>
 
-    <!-- Timeline -->
-    <section class="page-section">
-      <div class="container-fluid">
-        <ul class="timeline">
-          <li class="titles-only">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="../img/maths-tutor.jpg"
-                alt="explicacoes logo" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 data-translate="current_role"></h4>
-                <h5 class="subheading" data-translate="independent_tutor"></h5>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted timeline-centered">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="../img/mario_sacramento_logo.png"
-                alt="fontana logo" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 data-translate="september_2015_june_2016"></h4>
-                <h5 class="subheading" data-translate="teaching_internship"></h5>
-              </div>
-            </div>
-          </li>
-          <li class="titles-only">
-            <div class="timeline-image"><img class="rounded-circle img-fluid" src="../img/logo-fontana-round.jpg"
-                alt="fontana logo" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 data-translate="september_2014_june_2015"></h4>
-                <h5 class="subheading" data-translate="bilingual_teacher_fontana"></h5>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image"><img class="rounded-circle img-fluid"
-                src="../img/logo-britanico-round-removebg.png" alt="britanico logo" /></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 data-translate="january_2014_september_2014"></h4>
-                <h5 class="subheading" data-translate="math_coordinator_britanico"></h5>
-              </div>
-              <div class="timeline-heading">
-                <h4 data-translate="august_2013_september_2014"></h4>
-                <h5 class="subheading" data-translate="bilingual_teacher_britanico"></h5>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- End of Timeline -->
-  </section>
-  <!-- End of Experiência -->
-
-  <!-- Educação -->
-  <section class="education">
-    <div class="row">
-      <div class="col">
-        <h2 class="text-secondary text-center display-4 my-4" id="education" data-translate="education"></h2>
-      </div>
-    </div>
-
-    <div class="container education">
-      <div class="row justify-content-center align-items-center text-center text-md-left">
-        <div class="col-6 col-md-6 col-lg-5 mb-4 mb-md-0 align-self-center">
-          <img class="mr-5 img-fluid rounded-circle" id="ua-image" src="../img/logo-ua-round.jpg" alt="ua logo">
+    <div class="container">
+      <div class="content">
+        <div class="text">
+          <p data-translate="online_description"></p>
+          <ul>
+            <li data-translate="online_point_1"></li>
+            <li data-translate="online_point_2"></li>
+            <li data-translate="online_point_3"></li>
+          </ul>
+          <a href="mailto:aveiro.matematica@gmail.com" class="cta-button" data-translate="schedule_online_class"></a>
         </div>
-        <div class="col-10 col-md-6 col-lg-7">
-          <h3 class="mt-0 mb-1" data-translate="masters_education"></h3>
-          <p class="mb-2" data-translate="thesis"></p>
-          <p class="mb-2" data-translate="internship_location"></p>
-          <p class="mb-4" data-translate="supervisors"></p>
-          <h3 class="mt-4 mb-1" data-translate="bachelor_mathematics"></h3>
-          <p class="mb-0" data-translate="masters_management"></p>
+        <div class="online-tutoring-img">
+          <img src="../img/online_tutoring.jpg" alt="Mapa-mundo com alcance global">
         </div>
       </div>
     </div>
   </section>
-  <!-- End of Educação-->
 
   <hr class="footer-line">
 
@@ -376,7 +306,7 @@
       <!-- Contacta-me -->
       <div class="col-lg-6 col-md-6 mb-4 mb-lg-0">
         <h5 class="text-uppercase mb-4" data-translate="contact-me"></h5>
-        <a href="mailto:aveiro.matematica@gmail.com" class="btn btn-secondary btn-lg" id="contact-button"
+        <a href="mailto:aveiro.matematica@gmail.com" class="btn btn-primary btn-lg" id="contact-button"
           data-translate="schedule-class"></a>
       </div>
     </div>

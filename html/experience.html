@@ -30,9 +30,9 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/index.html">Home</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="../html/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience" data-translate="experience"></a></li>
+                <li class="nav-item"><a class="nav-link" href="#education" data-translate="education"></a></li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" id="language-nav">
@@ -46,12 +46,58 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Sobre mim >
+    <div class="row">
+        <div class="col my-4">
+            <h2 class="text-secondary text-center display-4 my-4" id="about-me" data-translate="about-me"></h2>
+        </div>
+    </div-->
+
+    <section class="container-fluid aboutme">
+        <!-- First Card Section -->
+        <div class="row justify-content-center">
+            <div class="col-8 col-md-4">
+                <!-- First card -->
+                <div class="card border-0">
+                    <img src="../img/Experience-removebg.png" class="card-img-top" alt="Experience card">
+                    <div class="card-body">
+                        <h5 class="text-center" data-translate="experienced"></h5>
+                        <p class="card-text text-center text-secondary" data-translate="experienced_description"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-md-4">
+                <!-- Second card -->
+                <div class="card border-0">
+                    <img src="../img/qualified_gray_within-removebg.png" class="card-img-top" alt="Qualified card">
+                    <div class="card-body">
+                        <h5 class="text-center" data-translate="qualified"></h5>
+                        <p class="card-text text-center text-secondary" data-translate="qualified_description"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-md-4">
+                <!-- Third card -->
+                <div class="card border-0">
+                    <img src="../img/dedicated-removebg.png" class="card-img-top" alt="Dedicated card">
+                    <div class="card-body">
+                        <h5 class="text-center" data-translate="dedicated"></h5>
+                        <p class="card-text text-center text-secondary" data-translate="dedicated_description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of First Card section -->
+
     <div class="row bg-white">
         <div class="col">
             <h2 class="text-secondary text-center display-4 my-4" id="experience" data-translate="experience"></h2>
         </div>
     </div>
-    <!-- Start of List Based Media -->
+
     <!-- Experiência -->
     <section class="page-section">
         <div class="container-fluid">
@@ -106,6 +152,7 @@
                         <div class="timeline-body">
                             <p class="text-muted" data-translate="math_coordinator_britanico_description"></p>
                         </div>
+                        <br>
                         <div class="timeline-heading">
                             <h4 data-translate="august_2013_september_2014"></h4>
                             <h4 class="subheading" data-translate="bilingual_teacher_britanico"></h4>
@@ -134,10 +181,32 @@
     </section>
     <!-- End of Experiência -->
 
-    <div class="text-center return">
-        <a href="../html/index.html" name="txtVoltar" class="btn btn-secondary btn-lg" id="return-button"
-            data-translate="homepage_return"></a>
-    </div>
+    <!-- Educação -->
+    <section class="education">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-secondary text-center display-4 my-4" id="education" data-translate="education"></h2>
+            </div>
+        </div>
+
+        <div class="container education">
+            <div class="row justify-content-center align-items-center text-center text-md-left">
+                <div class="col-6 col-md-6 col-lg-5 mb-4 mb-md-0 align-self-center">
+                    <img class="mr-5 img-fluid rounded-circle" id="ua-image" src="../img/logo-ua-round.jpg"
+                        alt="ua logo">
+                </div>
+                <div class="col-10 col-md-6 col-lg-7">
+                    <h3 class="mt-0 mb-1" data-translate="masters_education"></h3>
+                    <p class="mb-2" data-translate="thesis"></p>
+                    <p class="mb-2" data-translate="internship_location"></p>
+                    <p class="mb-4" data-translate="supervisors"></p>
+                    <h3 class="mt-4 mb-1" data-translate="bachelor_mathematics"></h3>
+                    <p class="mb-0" data-translate="masters_management"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Educação-->
 
     <script src="../js/translations.js"></script>
     <!-- Bootstrap's JavaScript Files -->
@@ -152,10 +221,47 @@
         crossorigin="anonymous"></script>
 </body>
 
-<footer>
-    <div class="text-center p-3 border-white" id="footer">
-        © 2024 Irina Oliveira | Website developed by João Coquim
+<hr class="footer-line">
+
+<!-- Footer -->
+<footer class="bg-white text-center text-dark mt-xl-5 pt-1" id="contacts">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mb-4 mb-lg-0">
+          <!-- Contactos -->
+          <h5 class="text-uppercase mb-4" data-translate="contacts"></h5>
+          <ul class="list-unstyled">
+            <!--li>
+                  <i class="fas fa-map-marker-alt pe-2"><span class="contacts"> Aveiro, Portugal</span></i>
+                </li-->
+            <li>
+              <div class="fas fa-phone"><span class="contacts"> +351 912 733 683</div>
+            </li>
+            <li>
+              <div class="fas fa-envelope"><span class="contacts"> aveiro.matematica@gmail.com</span></div>
+            </li>
+            <li>
+  
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Contacta-me -->
+        <div class="col-lg-6 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase mb-4" data-translate="contact-me"></h5>
+          <a href="mailto:aveiro.matematica@gmail.com" class="btn btn-primary btn-lg" id="contact-button"
+            data-translate="schedule-class"></a>
+        </div>
+      </div>
     </div>
-</footer>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 border-white" id="copyright">
+      © 2024 Irina Oliveira | Website developed by João Coquim
+    </div>
+    <!-- Copyright -->
+  </footer>
 
 </html>
