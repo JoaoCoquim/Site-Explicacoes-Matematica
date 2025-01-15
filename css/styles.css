@@ -112,7 +112,7 @@
 
 header.masthead {
     padding-bottom: calc(10rem - 4.5rem);
-    background: url("../img/map.jpg");
+    background: url("../img/notebook-computer-books.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -146,6 +146,7 @@ header.masthead .h1 {
 }
 
 @media (min-width: 1200px) {
+
     header.masthead h1,
     header.masthead .h1 {
         font-size: 3.5rem;
@@ -184,6 +185,10 @@ header.masthead .h1 {
 
 #experience {
     padding-bottom: 40px;
+}
+
+.testimonials {
+    margin: 50px 0;
 }
 
 .testimonial-card {
@@ -246,7 +251,7 @@ header.masthead .h1 {
 }
 
 .online-tutoring-section {
-    padding: 0 20px 50px 0;
+    padding-bottom: 50px;
 }
 
 .online-tutoring-section .container {
@@ -268,6 +273,7 @@ header.masthead .h1 {
 .online-tutoring-section .text {
     flex: 1 1 auto;
     text-align: left;
+    padding-left: 50px;
 }
 
 .online-tutoring-section .text p {
@@ -286,7 +292,7 @@ header.masthead .h1 {
     margin-bottom: 10px;
 }
 
-.online-tutoring-section .text .cta-button {
+.online-tutoring-section .text .schedule-button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -304,10 +310,12 @@ header.masthead .h1 {
 
 .online-tutoring-img {
     flex: 1 1 auto;
+    padding-right: 50px;
 }
 
 .online-tutoring-img img {
-    max-width: 100%;
+    height: 350px;
+    max-width: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -381,25 +389,37 @@ header.masthead .h1 {
     color: black;
     cursor: pointer;
     transition: color 0.3s ease;
-  }
-  #close-popup:hover {
+}
+
+#close-popup:hover {
     color: #0056b3;
-  }
+}
 
 .contact-popup {
     animation: slideIn 1s ease-out;
-  }
-  
-  @keyframes slideIn {
+}
+
+@keyframes slideIn {
     from {
-      transform: translateY(50px);
-      opacity: 0;
+        transform: translateY(50px);
+        opacity: 0;
     }
+
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
 
 /* Responsive adjustments */
 
